@@ -1,0 +1,108 @@
+@import "tailwindcss";
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
+
+.skills-section {
+  background: linear-gradient(to bottom, #1e293b, #0f172a);
+  color: white;
+}
+
+.skill-card {
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card h2 {
+  font-size: 1.5rem;
+  color: #f3f4f6;
+  margin-top: 1rem; /* Add margin to push it below the progress bar */
+  text-align: center;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+@layer utilities {
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Animation utilities */
+  .animate-slideInLeft {
+    animation: slideInLeft 1s ease-out;
+  }
+
+  .animate-slideInDown {
+    animation: slideInDown 1s ease-out;
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+}
+
+.input-style {
+  @apply w-full p-3 rounded-md bg-[#121121] border border-purple-500 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600;
+}

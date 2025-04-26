@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face{
+    font-family: Centra;
+    src:url('./assets/font/CentraNo2-Bold.ttf');
+    font-weight:700;
+}
+@font-face{
+    font-family: Centra;
+    src:url('./assets/font/CentraNo2-Book.ttf');
+    font-weight:400;
+}
+@font-face{
+    font-family: Centra;
+    src:url('./assets/font/CentraNo2-Medium.ttf');
+    font-weight:500;
+}
+
+*{
+    /* margin:0; */
+    /* padding:0; */
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 75px; */
+}
+
+body{
+    overflow-x: hidden;
+    
+    /* background-color: #0d071b; */
+    background-color: #0d071b; /* Matches your primary tone */
+    background: radial-gradient(circle at center, #1f1439 0%, #0d071b 100%);
+    color: white;
+    scroll-behavior: smooth;
+    
+    font-family:'Centra',sans-serif
+    
+}
+
+/* Custom Scrollbar Styles */
+/*  */
+  
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    /* background-color: #0e4166;
+     */
+     background-color: #0d071b; /* Matches your primary tone */
+    background: radial-gradient(circle at center, #1f1439 0%, #0d071b 100%);
+    
+    z-index: -1;
+}
+
+.nav{
+    font-family: Manrope;
+}
+
+
+.up{
+    font-family: fredoka;
+    font-size: 8.5rem;
+}
+.down{
+    font-family: Manrope;
+}
+.scroll{
+    font-family: Manrope;
+    
+}
+
+.hire{
+    font-family: Manrope;
+    
+}
+
+.skill{
+    font-family: fredoka;
+}
+
+
+#services h1{
+    font-family: fredoka;
+    font-weight: 600;
+}
+
+.services p{
+    font-family: Manrope;
+    font-weight: 500;
+}
+
+#mp{
+    font-family: fredoka;
+}
+#mb{
+    font-family: fredoka;
+
+}
+.project-container {
+  position: relative;
+}
+
+.contacts{
+    font-family: fredoka;
+    font-weight: 600;
+}
+.form{
+    font-family: Manrope;
+    font-weight: 500;
+}
+
+.info{
+    font-family: fredoka;
+    font-weight: 600;
+}
+
+.info{
+    font-family: Manrope;
+    font-weight: 500;
+}
