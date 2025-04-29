@@ -12,7 +12,7 @@ const projects = [
     title: "Portfolio Website",
     image: port,
     description: "A personal portfolio website built with React JS and Tailwind CSS.",
-    demoLink: "https://github.com/Dev-Darji/Portfolio_main",
+    demoLink: "https://portfolio-1536.vercel.app/",
     codeLink: "https://github.com/Dev-Darji/Portfolio_main",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     title: "Spotify Clone",
     image: spotify,
     description: "A Spotify Clone application using React JS and Tailwind CSS.",
-    demoLink: "https://github.com/Dev-Darji/Spotify_Clone",
+    demoLink: "https://spotify-clone-taupe-tau.vercel.app/",
     codeLink: "https://github.com/Dev-Darji/Spotify_Clone",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     title: "Expense Tracker",
     image: ET,
     description: "A Expense Tracker application using React.",
-    demoLink: "https://github.com/Dev-Darji/EXPENSE-TRACKER",
+    demoLink: "https://expensetracker-lovat-iota.vercel.app/",
     codeLink: "https://github.com/Dev-Darji/EXPENSE-TRACKER",
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     title: "Burger Bites",
     image: burger,
     description: "A Burger Bites application using HTML and CSS.",
-    demoLink: "https://github.com/Dev-Darji/burger-bites",
+    demoLink: "https://burgerbites-peach.vercel.app/",
     codeLink: "https://github.com/Dev-Darji/burger-bites",
   },
   {
