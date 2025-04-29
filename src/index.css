@@ -42,6 +42,7 @@
   color: #d1d5db;
 }
 
+/* Animation Keyframes */
 @layer utilities {
   @keyframes slideInLeft {
     0% {
@@ -85,7 +86,7 @@
     }
   }
 
-  /* Animation utilities */
+  /* Animation Utilities */
   .animate-slideInLeft {
     animation: slideInLeft 1s ease-out;
   }
@@ -103,6 +104,7 @@
   }
 }
 
+/* Input Style */
 .input-style {
   @apply w-full p-3 rounded-md bg-[#121121] border border-purple-500 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600;
 }

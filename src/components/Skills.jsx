@@ -54,7 +54,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="max-w-7xl mx-auto text-center"
+        className="max-w-6xl mx-auto text-center"
       >
         <h2 className="text-5xl md:text-6xl font-extrabold mb-3">
           <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text">

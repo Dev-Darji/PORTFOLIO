@@ -50,7 +50,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 mt-20 ">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 mt-20 ">
         {/* Left side contact info */}
         <div className="flex-1 flex flex-col gap-10 justify-center">
           <ContactCard
@@ -58,7 +58,7 @@ const Contact = () => {
               <img
                 src="src/assets/img/phone.png"
                 alt="Phone Icon"
-                className="w-8 h-8 "
+                className="w-7 h-7 "
               />
             }
             label="Call Me"

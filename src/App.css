@@ -35,7 +35,8 @@ html{
 
 body{
     overflow-x: hidden;
-    
+    display: flex;
+    justify-content: center;
     /* background-color: #0d071b; */
     background-color: #0d071b; /* Matches your primary tone */
     background: radial-gradient(circle at center, #1f1439 0%, #0d071b 100%);
@@ -45,6 +46,8 @@ body{
     font-family:'Centra',sans-serif
     
 }
+
+
 
 /* Custom Scrollbar Styles */
 /*  */
@@ -73,10 +76,11 @@ svg {
 
 .up{
     font-family: fredoka;
-    font-size: 8.5rem;
+    font-size: 7.5rem;
 }
 .down{
     font-family: Manrope;
+    font-size: 7.5rem;
 }
 .scroll{
     font-family: Manrope;

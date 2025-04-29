@@ -29,97 +29,78 @@ const Navbar = () => {
 
   return (
     <div
-      expand="lg"
-      className={`nav fixed top-0 w-screen px-16 py-2 flex justify-between items-center backdrop-blur-md transition-all duration-300 z-10 gap-14 ${
-        scrolled ? "bg-gray-800/70 shadow-md" : "bg-transparent"
-      }`}
+  expand="lg"
+  className={`nav fixed top-0 w-full px-4 sm:px-8 py-1 flex justify-between items-center backdrop-blur-md transition-all duration-300 z-10 gap-8 ${scrolled ? "bg-gray-800/70 shadow-md" : "bg-transparent"}`}
+>
+  {/* Logo */}
+  <a href="#">
+    <img
+      className="w-20 sm:w-16 lg:w-22 invert px-3 py-2 transition-transform duration-300 ease-in-out hover:scale-110"
+      src={logo}
+      alt="Logo"
+    />
+  </a>
+
+  {/* Navigation Links */}
+  <div className="text-gray-200 hidden sm:flex sm:text-lg lg:text-[1.38rem] justify-center gap-10 font-semibold items-center -ml-[160px] ">
+    <a
+      href="#"
+      onClick={() => onUpdateActivelink("home")}
+      className={`${activeLink === "home" ? "active navbar-link" : "navbar-link"} relative group px-3 py-2 font-semibold`}
     >
-      {/* Logo */}
-      <a href="#">
-        <img
-          className="max-sm:w-16 max-sm:-ml-[30px] lg:w-24 invert px-3 py-2 lg:mr-60 transition-transform duration-300 ease-in-out hover:scale-110"
-          src={logo}
-          alt="Logo"
-        />
-      </a>
+      Home
+      <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+    </a>
+    <a
+      href="#skills"
+      onClick={() => onUpdateActivelink("skills")}
+      className={`${activeLink === "skills" ? "active navbar-link" : "navbar-link"} relative group px-3 py-2 font-semibold`}
+    >
+      Skills
+      <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+    </a>
+    <a
+      href="#services"
+      onClick={() => onUpdateActivelink("contact")}
+      className={`${activeLink === "contact" ? "active navbar-link" : "navbar-link"} relative group px-3 py-2 font-semibold`}
+    >
+      Services
+      <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+    </a>
+    <a
+      href="#projects"
+      onClick={() => onUpdateActivelink("projects")}
+      className={`${activeLink === "projects" ? "active navbar-link" : "navbar-link"} relative grou px-3 py-2 font-semibold`}
+    >
+      Projects
+      <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+    </a>
+    <a
+      href="#contact"
+      onClick={() => onUpdateActivelink("contact")}
+      className={`${activeLink === "contact" ? "active navbar-link" : "navbar-link"} relative group px-3 py-2 font-semibold`}
+    >
+      Contact Me
+      <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
+    </a>
+  </div>
 
-      {/* Navigation Links */}
-      <div className="max-sm:hidden max-sm:text-sm max-sm:gap-8 lg:text-2xl flex justify-center gap-20 font-semibold items-center lg:-ml-[500px]">
-        <a
-          href="#"
-          onClick={() => onUpdateActivelink("home")}
-          className={`${
-            activeLink === "home" ? "active navbar-link" : "navbar-link"
-          } relative group text-white px-3 py-2 font-semibold`}
-        >
-          Home
-          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
-        </a>
-        <a
-          href="#skills"
-          onClick={() => onUpdateActivelink("skills")}
-          className={`${
-            activeLink === "skills" ? "active navbar-link" : "navbar-link"
-          } relative group text-white px-3 py-2 font-semibold`}
-        >
-          Skills
-          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
-        </a>
-        <a
-          href="#services"
-          onClick={() => onUpdateActivelink("contact")}
-          className={`${
-            activeLink === "contact" ? "active navbar-link" : "navbar-link"
-          } relative group text-white px-3 py-2 font-semibold`}
-        >
-          Services
-          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
-        </a>
-        <a
-          href="#projects"
-          onClick={() => onUpdateActivelink("projects")}
-          className={`${
-            activeLink === "projects" ? "active navbar-link" : "navbar-link"
-          } relative group text-white px-3 py-2 font-semibold`}
-        >
-          Projects
-          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
-        </a>
-        <a
-          href="#contact"
-          onClick={() => onUpdateActivelink("contact")}
-          className={`${
-            activeLink === "contact" ? "active navbar-link" : "navbar-link"
-          } relative group text-white px-3 py-2 font-semibold`}
-        >
-          Contact Me
-          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-purple-400 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0"></span>
-        </a>
-      </div>
+  {/* Social Icons */}
+  <div className="hidden sm:flex justify-between gap-10 items-center -mr-[200px] ">
+    <img className="invert w-8 hover:scale-115 transition-all duration-300 ease-in-out" src={navIcon2} alt="LinkedIn" />
+    <img className="invert w-8 hover:scale-115 transition-all duration-300 ease-in-out" src={github} alt="GitHub" />
+  </div>
 
-      {/* Social Icons */}
-      <div className="max-sm:hidden flex justify-between gap-12 items-center -mr-[300px]">
-        <img
-          className="invert w-10 hover:scale-115 transition-all duration-300 ease-in-out"
-          src={navIcon2}
-          alt="LinkedIn"
-        />
-        <img
-          className="invert w-10 hover:scale-115 transition-all duration-300 ease-in-out"
-          src={github}
-          alt="GitHub"
-        />
-      </div>
+  {/* Resume Button */}
+  <a
+    href={Resume}
+    download="Resume.pdf"
+    className="flex items-center text-lg sm:text-xl rounded border px-4 py-3 border-purple-400 hover:bg-white hover:text-black font-semibold hover:font-semibold transition-all duration-300 ease-in-out hover:scale-105"
+  >
+    Resume <img className="w-5 sm:w-6 invert" src={download} alt="Download" />
+  </a>
+</div>
 
-      {/* Resume Button */}
-      <a
-        href={Resume}
-        download="Resume.pdf"
-        className="flex max-sm:flex max-sm:text-sm max-sm:-mr-7 max-sm:gap-1 lg:gap-4 text-2xl rounded border max-sm:py-2 max-sm:px-3 lg:py-3 lg:px-5 border-purple-400 hover:bg-white hover:text-black font-semibold hover:font-semibold transition-all duration-300 ease-in-out hover:scale-105"
-      >
-        Resume <img className="w-5 lg:w-8 invert" src={download} alt="Download" />
-      </a>
-    </div>
   );
 };
 
